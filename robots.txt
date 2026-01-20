@@ -1,0 +1,14 @@
+# Robots.txt untuk https://jasa-paintball-malang.vercel.app/
+# Dibuat untuk memaksimalkan crawling & indexing Google
+
+# 1. Aturan untuk semua bot pencari (Google, Bing, Yahoo, dll)
+User-agent: *
+Allow: /
+
+# 2. Block akses ke file/folder sensitif (Opsional - aktifkan jika ada)
+# Disallow: /api/
+# Disallow: /admin/
+# Disallow: /private/
+
+# 3. Peta Situs (Sangat Penting untuk SEO)
+Sitemap: https://jasa-paintball-malang.vercel.app/sitemap.xml
