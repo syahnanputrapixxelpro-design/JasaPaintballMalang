@@ -9,7 +9,7 @@
     <meta name="description" content="AdrenaLine Paintball Arena Malang. Tempat main paintball terbaik dengan arena tactical, peralatan premium, dan harga terjangkau. Booking sekarang!">
     <meta name="keywords" content="paintball malang, harga paintball malang, tempat outbound malang, adrenaline paintball, wisata malang">
     <meta name="author" content="AdrenaLine Paintball Arena">
-    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://adrenalinepaintball.id/">
 
     <meta property="og:type" content="website">
@@ -35,20 +35,45 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link rel="preload" as="image" href="assets/img/Logo.webp" fetchpriority="high">
+
+    <style>
+        /* CSS Reset & Variables */
+        :root{--primary-color:#FF4500;--secondary-color:#FFD700;--dark-color:#0A0A0A;--gray-color:#2A2A2A;--accent-green:#00FF41;--accent-blue:#00D4FF}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Rajdhani',Arial,sans-serif;background:var(--dark-color);color:#fff;overflow-x:hidden}
+        
+        /* CRITICAL BOOTSTRAP GRID FALLBACK (Anti-CLS) */
+        .container{width:100%;padding-right:var(--bs-gutter-x,.75rem);padding-left:var(--bs-gutter-x,.75rem);margin-right:auto;margin-left:auto;max-width:1320px}
+        .row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(-1 * var(--bs-gutter-y));margin-right:calc(-.5 * var(--bs-gutter-x));margin-left:calc(-.5 * var(--bs-gutter-x))}
+        .row>*{flex-shrink:0;width:100%;max-width:100%;padding-right:calc(.5 * var(--bs-gutter-x));padding-left:calc(.5 * var(--bs-gutter-x));margin-top:var(--bs-gutter-y)}
+        .d-flex{display:flex!important}
+        .align-items-center{align-items:center!important}
+        .gap-3{gap:1rem!important}
+        .mb-4{margin-bottom:1.5rem!important}
+        @media (min-width:992px){.col-lg-7{flex:0 0 auto;width:58.33333333%}.col-lg-4{flex:0 0 auto;width:33.33333333%}.col-lg-8{flex:0 0 auto;width:66.66666667%}.text-lg-start{text-align:left!important}.text-lg-end{text-align:right!important}}
+        
+        /* Custom Styles */
+        p,li,span,a,label,input,textarea,select,option{color:#fff}p{color:#ccc}
+        .navbar-custom{background:rgba(10,10,10,.95);backdrop-filter:blur(10px);padding:.5rem 0;transition:all .3s;border-bottom:2px solid var(--primary-color);position:fixed;top:0;right:0;left:0;z-index:1030}
+        .navbar-brand img{max-height:45px;width:auto}
+        .nav-link{color:#fff!important;font-weight:600;font-size:1.1rem;position:relative;margin:0 .5rem;text-decoration:none;display:block;padding:.5rem 1rem}
+        .hero-section{position:relative;min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,#0A0A0A 0%,#1A1A1A 100%);padding-top:80px;overflow:hidden}
+        .hero-title{font-family:'Bebas Neue',Impact,sans-serif;font-size:5.5rem;font-weight:700;line-height:1;margin-bottom:1rem;background:linear-gradient(135deg,#fff 0%,var(--secondary-color) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-transform:uppercase}
+        .hero-subtitle{font-size:1.5rem;color:#ccc;margin-bottom:2rem;font-weight:600}
+        .hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle at 20% 50%,rgba(255,69,0,.1) 0%,transparent 50%),radial-gradient(circle at 80% 50%,rgba(255,215,0,.1) 0%,transparent 50%);z-index:0}
+        .btn-primary-custom{background:linear-gradient(135deg,var(--primary-color),#ff6b35);border:none;padding:1rem 2.5rem;font-size:1.2rem;font-weight:700;border-radius:50px;color:#fff;cursor:pointer;display:inline-block;text-decoration:none;line-height:1.5}
+        
+        /* Defer non-critical styles */
+        .section-title{font-family:'Bebas Neue',Impact,sans-serif;font-size:4rem;text-align:center;margin-bottom:1rem;background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-transform:uppercase;letter-spacing:3px}.section-subtitle{text-align:center;color:#aaa;font-size:1.2rem;margin-bottom:4rem}.about-section{padding:100px 0;background:linear-gradient(180deg,var(--dark-color) 0%,var(--gray-color) 100%);position:relative}.about-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,69,0,.3);border-radius:20px;padding:2rem;backdrop-filter:blur(10px);transition:all .3s;height:100%;color:#ccc}.about-card h3{color:#fff}.about-card p{color:#ccc}.about-card:hover{transform:translateY(-10px);border-color:var(--primary-color);box-shadow:0 20px 40px rgba(255,69,0,.3)}.about-icon{width:80px;height:80px;background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));border-radius:20px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;font-size:2rem}.services-section{padding:100px 0;background:var(--dark-color)}.service-card{background:linear-gradient(145deg,rgba(42,42,42,.8),rgba(20,20,20,.8));border-radius:20px;padding:2.5rem;height:100%;border:2px solid transparent;transition:all .4s;position:relative;overflow:hidden;color:#ccc}.service-card h3{color:#fff}.service-card p{color:#ccc}.service-card::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,69,0,.2),transparent);transition:left .5s}.service-card:hover::before{left:100%}.service-card:hover{border-color:var(--primary-color);transform:translateY(-10px);box-shadow:0 20px 50px rgba(255,69,0,.4)}.service-icon{font-size:3.5rem;color:var(--primary-color);margin-bottom:1.5rem}.service-title{font-family:'Teko',Arial,sans-serif;font-size:2rem;font-weight:700;margin-bottom:1rem}.cta-section{padding:80px 0;background:linear-gradient(135deg,var(--primary-color),#ff6b35);position:relative;overflow:hidden}.cta-section::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="%23ffffff" fill-opacity="0.05"/></svg>');background-size:cover;opacity:.3}.cta-content{position:relative;z-index:1}.cta-title{font-family:'Bebas Neue',Impact,sans-serif;font-size:3.5rem;margin-bottom:1rem}.product-card{background:rgba(255,255,255,.05);border-radius:15px;padding:2rem;border:2px solid rgba(255,69,0,.3);transition:all .3s;cursor:pointer;height:100%;display:flex;flex-direction:column;color:#fff}.product-card h3{color:#fff}.product-card p,.product-card li{color:#ccc}.product-card .btn-primary-custom{margin-top:auto}.product-card:hover{border-color:var(--primary-color);transform:translateY(-5px);box-shadow:0 15px 30px rgba(255,69,0,.3)}.product-price{font-family:'Bebas Neue',Impact,sans-serif;font-size:2.5rem;color:var(--secondary-color)}.gallery-section{padding:100px 0;background:var(--gray-color)}.gallery-item{position:relative;overflow:hidden;border-radius:15px}.gallery-item img{width:100%;height:300px;object-fit:cover;transition:transform .5s}.gallery-item:hover img{transform:scale(1.1)}.gallery-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,rgba(255,69,0,.8),rgba(255,215,0,.8));display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s}.gallery-item:hover .gallery-overlay{opacity:1}.testimonial-section{padding:100px 0;background:var(--dark-color)}.testimonial-card{background:rgba(255,255,255,.05);border-radius:20px;padding:2.5rem;border-left:5px solid var(--primary-color);transition:all .3s;height:100%}.testimonial-card:hover{transform:translateX(10px);box-shadow:-10px 10px 30px rgba(255,69,0,.3)}.testimonial-text{font-size:1.1rem;font-style:italic;margin-bottom:1.5rem;color:#ddd}.testimonial-author{display:flex;align-items:center;gap:1rem}.testimonial-avatar{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:700}.faq-section{padding:100px 0;background:var(--gray-color)}.accordion-item{background:rgba(255,255,255,.05);border:1px solid rgba(255,69,0,.3);margin-bottom:1rem;border-radius:10px;overflow:hidden}.accordion-button{background:transparent;color:#fff;font-size:1.2rem;font-weight:600;padding:1.5rem;width:100%;text-align:left;border:none;outline:none}.accordion-button:not(.collapsed){background:rgba(255,69,0,.2);color:#fff}.accordion-body{background:rgba(0,0,0,.3);color:#ddd;padding:1.5rem}.news-section{padding:100px 0;background:var(--dark-color)}.news-card{background:rgba(255,255,255,.05);border-radius:15px;overflow:hidden;transition:all .3s;height:100%;border:1px solid rgba(255,255,255,.1);color:#ccc}.news-card h3{color:#fff}.news-card p{color:#ccc}.news-card:hover{transform:translateY(-10px);box-shadow:0 20px 40px rgba(255,69,0,.3);border-color:var(--primary-color)}.news-card img{width:100%;height:200px;object-fit:cover}.news-content{padding:1.5rem}.news-date{color:var(--secondary-color);font-size:.9rem;margin-bottom:.5rem}.news-title{font-family:'Teko',Arial,sans-serif;font-size:1.8rem;font-weight:700;margin-bottom:1rem;line-height:1.2}.contact-section{padding:100px 0;background:linear-gradient(180deg,var(--gray-color) 0%,var(--dark-color) 100%)}.contact-info-card{background:rgba(255,255,255,.05);border-radius:20px;padding:2rem;margin-bottom:2rem;border:2px solid rgba(255,69,0,.3);transition:all .3s;color:#ccc}.contact-info-card h4{color:#fff}.contact-info-card p{color:#ccc}.contact-info-card:hover{border-color:var(--primary-color)}.contact-icon{width:60px;height:60px;background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));border-radius:15px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1rem}.contact-form{background:rgba(255,255,255,.05);border-radius:20px;padding:3rem;border:2px solid rgba(255,69,0,.3);color:#fff}.contact-form h3{color:#fff}.contact-form p{color:#ccc}.form-label{font-weight:600;color:#fff;margin-bottom:.5rem}.form-control,.form-select{background:rgba(255,255,255,.1);border:1px solid rgba(255,69,0,.3);color:#fff;padding:.8rem 1rem;border-radius:10px;width:100%}.form-control:focus,.form-select:focus{background:rgba(255,255,255,.15);border-color:var(--primary-color);color:#fff}.btn-outline-custom{border:2px solid var(--secondary-color);color:var(--secondary-color);padding:1rem 2.5rem;font-size:1.2rem;font-weight:700;border-radius:50px;background:transparent;transition:all .3s;cursor:pointer}.btn-outline-custom:hover{background:var(--secondary-color);color:var(--dark-color);transform:translateY(-3px)}.hero-stats{display:flex;gap:3rem;margin-top:2rem}.stat-item{text-align:center}.stat-number{font-family:'Bebas Neue',Impact,sans-serif;font-size:3rem;color:var(--primary-color)}.stat-label{font-size:1rem;color:#aaa}.float-btn{position:fixed;right:20px;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:28px;box-shadow:0 5px 20px rgba(0,0,0,.5);z-index:1000;transition:all .3s ease;text-decoration:none}.float-wa{bottom:90px;background:linear-gradient(135deg,#25D366,#20b358)}.float-top{bottom:20px;background:linear-gradient(135deg,#FF4500,#ff6b35);opacity:0;visibility:hidden}.float-top.show{opacity:1;visibility:visible}.footer{background:#000;padding:60px 0 20px;border-top:3px solid var(--primary-color)}.footer-title{font-family:'Teko',Arial,sans-serif;font-size:1.8rem;color:var(--primary-color);margin-bottom:1.5rem}.footer-links{list-style:none;padding:0}.footer-links li{margin-bottom:.8rem;color:#aaa}.footer-links a{color:#aaa;text-decoration:none}.social-icons a{display:inline-block;width:45px;height:45px;background:rgba(255,69,0,.2);border-radius:50%;text-align:center;line-height:45px;margin-right:10px;color:#fff}.animate-on-scroll{opacity:0;transform:translateY(30px);transition:all .6s ease-out}.animate-on-scroll.animated{opacity:1;transform:translateY(0)}
+        @media (max-width:991px){.hero-section{padding-top:100px;text-align:center}.hero-content .d-flex{justify-content:center}.hero-stats{justify-content:center}}@media (max-width:768px){.hero-title{font-size:2.8rem}.hero-subtitle{font-size:1.1rem}.hero-stats{flex-wrap:wrap;gap:1.5rem;justify-content:center}.stat-item{flex:0 0 auto;width:45%}}
+    </style>
 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&family=Teko:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        :root{--primary-color:#FF4500;--secondary-color:#FFD700;--dark-color:#0A0A0A;--gray-color:#2A2A2A;--accent-green:#00FF41;--accent-blue:#00D4FF}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Rajdhani',Arial,sans-serif;background:var(--dark-color);color:#fff;overflow-x:hidden}p,li,span,a,label,input,textarea,select,option{color:#fff}p{color:#ccc}.navbar-custom{background:rgba(10,10,10,.95);backdrop-filter:blur(10px);padding:.5rem 0;transition:all .3s;border-bottom:2px solid var(--primary-color)}.navbar-custom.scrolled{background:rgba(10,10,10,.98);box-shadow:0 5px 30px rgba(255,69,0,.3)}.navbar-brand img{max-height:45px;width:auto;aspect-ratio:auto}.nav-link{color:#fff!important;font-weight:600;font-size:1.1rem;position:relative;margin:0 .5rem;transition:all .3s}.nav-link:hover{color:var(--primary-color)!important;transform:translateY(-2px)}.nav-link::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:3px;background:var(--primary-color);transition:width .3s}.nav-link:hover::after{width:100%}.hero-section{position:relative;min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,#0A0A0A 0%,#1A1A1A 100%);overflow:hidden;padding-top:80px;contain:content}.hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle at 20% 50%,rgba(255,69,0,.1) 0%,transparent 50%),radial-gradient(circle at 80% 50%,rgba(255,215,0,.1) 0%,transparent 50%);z-index:0;will-change:transform}.paint-splatter{position:absolute;border-radius:50%;filter:blur(100px);animation:float 6s infinite ease-in-out}.splatter-1{width:400px;height:400px;background:radial-gradient(circle,rgba(255,69,0,.3),transparent);top:10%;left:-10%;animation-delay:0s}.splatter-2{width:300px;height:300px;background:radial-gradient(circle,rgba(255,215,0,.3),transparent);bottom:20%;right:-5%;animation-delay:2s}.splatter-3{width:350px;height:350px;background:radial-gradient(circle,rgba(0,255,65,.2),transparent);top:50%;right:20%;animation-delay:4s}@keyframes float{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,30px) scale(1.1)}}.hero-content{position:relative;z-index:2;animation:fadeInUp 1s ease-out}@keyframes fadeInUp{from{opacity:0;transform:translateY(50px)}to{opacity:1;transform:translateY(0)}}.hero-title{font-family:'Bebas Neue',Impact,sans-serif;font-size:5.5rem;font-weight:700;line-height:1;margin-bottom:1rem;background:linear-gradient(135deg,#fff 0%,var(--secondary-color) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-transform:uppercase;letter-spacing:3px}.hero-subtitle{font-size:1.5rem;color:#ccc;margin-bottom:2rem;font-weight:600}.hero-stats{display:flex;gap:3rem;margin-top:2rem}.stat-item{text-align:center}.stat-number{font-family:'Bebas Neue',Impact,sans-serif;font-size:3rem;color:var(--primary-color)}.stat-label{font-size:1rem;color:#aaa}.btn-primary-custom{background:linear-gradient(135deg,var(--primary-color),#ff6b35);border:none;padding:1rem 2.5rem;font-size:1.2rem;font-weight:700;border-radius:50px;transition:all .3s;position:relative;overflow:hidden;box-shadow:0 10px 30px rgba(255,69,0,.4);color:#fff;cursor:pointer}.btn-primary-custom:hover{transform:translateY(-3px);box-shadow:0 15px 40px rgba(255,69,0,.6)}.btn-outline-custom{border:2px solid var(--secondary-color);color:var(--secondary-color);padding:1rem 2.5rem;font-size:1.2rem;font-weight:700;border-radius:50px;background:transparent;transition:all .3s;cursor:pointer}.btn-outline-custom:hover{background:var(--secondary-color);color:var(--dark-color);transform:translateY(-3px)}@media (max-width:991px){.hero-section{padding-top:100px;text-align:center}.hero-content .d-flex{justify-content:center}.hero-stats{justify-content:center}}@media (max-width:768px){.hero-title{font-size:2.8rem}.hero-subtitle{font-size:1.1rem}.hero-stats{flex-wrap:wrap;gap:1.5rem;justify-content:center}.stat-item{flex:0 0 auto;width:45%}.btn-primary-custom,.btn-outline-custom{padding:.7rem 1.5rem;font-size:1rem}}
-        /* Non-critical CSS - Deferred in logic but kept here for structure compliance if needed by user, 
-           NOTE: Untuk PageSpeed 99, idealnya CSS di bawah ini dipisah, tapi saya simpan di head agar tidak layout shift (CLS) */
-        .section-title{font-family:'Bebas Neue',Impact,sans-serif;font-size:4rem;text-align:center;margin-bottom:1rem;background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-transform:uppercase;letter-spacing:3px}.section-subtitle{text-align:center;color:#aaa;font-size:1.2rem;margin-bottom:4rem}.about-section{padding:100px 0;background:linear-gradient(180deg,var(--dark-color) 0%,var(--gray-color) 100%);position:relative}.about-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,69,0,.3);border-radius:20px;padding:2rem;backdrop-filter:blur(10px);transition:all .3s;height:100%;color:#ccc}.about-card h3{color:#fff}.about-card p{color:#ccc}.about-card:hover{transform:translateY(-10px);border-color:var(--primary-color);box-shadow:0 20px 40px rgba(255,69,0,.3)}.about-icon{width:80px;height:80px;background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));border-radius:20px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;font-size:2rem}.services-section{padding:100px 0;background:var(--dark-color)}.service-card{background:linear-gradient(145deg,rgba(42,42,42,.8),rgba(20,20,20,.8));border-radius:20px;padding:2.5rem;height:100%;border:2px solid transparent;transition:all .4s;position:relative;overflow:hidden;color:#ccc}.service-card h3{color:#fff}.service-card p{color:#ccc}.service-card::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,69,0,.2),transparent);transition:left .5s}.service-card:hover::before{left:100%}.service-card:hover{border-color:var(--primary-color);transform:translateY(-10px);box-shadow:0 20px 50px rgba(255,69,0,.4)}.service-icon{font-size:3.5rem;color:var(--primary-color);margin-bottom:1.5rem}.service-title{font-family:'Teko',Arial,sans-serif;font-size:2rem;font-weight:700;margin-bottom:1rem}.cta-section{padding:80px 0;background:linear-gradient(135deg,var(--primary-color),#ff6b35);position:relative;overflow:hidden}.cta-section::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="%23ffffff" fill-opacity="0.05"/></svg>');background-size:cover;opacity:.3}.cta-content{position:relative;z-index:1}.cta-title{font-family:'Bebas Neue',Impact,sans-serif;font-size:3.5rem;margin-bottom:1rem}.product-card{background:rgba(255,255,255,.05);border-radius:15px;padding:2rem;border:2px solid rgba(255,69,0,.3);transition:all .3s;cursor:pointer;height:100%;display:flex;flex-direction:column;color:#fff}.product-card h3{color:#fff}.product-card p,.product-card li{color:#ccc}.product-card .btn-primary-custom{margin-top:auto}.product-card:hover{border-color:var(--primary-color);transform:translateY(-5px);box-shadow:0 15px 30px rgba(255,69,0,.3)}.product-price{font-family:'Bebas Neue',Impact,sans-serif;font-size:2.5rem;color:var(--secondary-color)}.gallery-section{padding:100px 0;background:var(--gray-color)}.gallery-item{position:relative;overflow:hidden;border-radius:15px}.gallery-item img{width:100%;height:300px;object-fit:cover;transition:transform .5s}.gallery-item:hover img{transform:scale(1.1)}.gallery-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,rgba(255,69,0,.8),rgba(255,215,0,.8));display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s}.gallery-item:hover .gallery-overlay{opacity:1}.testimonial-section{padding:100px 0;background:var(--dark-color)}.testimonial-card{background:rgba(255,255,255,.05);border-radius:20px;padding:2.5rem;border-left:5px solid var(--primary-color);transition:all .3s;height:100%}.testimonial-card:hover{transform:translateX(10px);box-shadow:-10px 10px 30px rgba(255,69,0,.3)}.testimonial-text{font-size:1.1rem;font-style:italic;margin-bottom:1.5rem;color:#ddd}.testimonial-author{display:flex;align-items:center;gap:1rem}.testimonial-avatar{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:700}.faq-section{padding:100px 0;background:var(--gray-color)}.accordion-item{background:rgba(255,255,255,.05);border:1px solid rgba(255,69,0,.3);margin-bottom:1rem;border-radius:10px;overflow:hidden}.accordion-button{background:transparent;color:#fff;font-size:1.2rem;font-weight:600;padding:1.5rem}.accordion-button:not(.collapsed){background:rgba(255,69,0,.2);color:#fff;box-shadow:none}.accordion-button:focus{box-shadow:none;border-color:var(--primary-color)}.accordion-body{background:rgba(0,0,0,.3);color:#ddd;padding:1.5rem}.news-section{padding:100px 0;background:var(--dark-color)}.news-card{background:rgba(255,255,255,.05);border-radius:15px;overflow:hidden;transition:all .3s;height:100%;border:1px solid rgba(255,255,255,.1);color:#ccc}.news-card h3{color:#fff}.news-card p{color:#ccc}.news-card:hover{transform:translateY(-10px);box-shadow:0 20px 40px rgba(255,69,0,.3);border-color:var(--primary-color)}.news-card img{width:100%;height:200px;object-fit:cover}.news-content{padding:1.5rem}.news-date{color:var(--secondary-color);font-size:.9rem;margin-bottom:.5rem}.news-title{font-family:'Teko',Arial,sans-serif;font-size:1.8rem;font-weight:700;margin-bottom:1rem;line-height:1.2}.contact-section{padding:100px 0;background:linear-gradient(180deg,var(--gray-color) 0%,var(--dark-color) 100%)}.contact-info-card{background:rgba(255,255,255,.05);border-radius:20px;padding:2rem;margin-bottom:2rem;border:2px solid rgba(255,69,0,.3);transition:all .3s;color:#ccc}.contact-info-card h4{color:#fff}.contact-info-card p{color:#ccc}.contact-info-card:hover{border-color:var(--primary-color)}.contact-icon{width:60px;height:60px;background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));border-radius:15px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1rem}.contact-form{background:rgba(255,255,255,.05);border-radius:20px;padding:3rem;border:2px solid rgba(255,69,0,.3);color:#fff}.contact-form h3{color:#fff}.contact-form p{color:#ccc}.form-label{font-weight:600;color:#fff;margin-bottom:.5rem}.form-control,.form-select{background:rgba(255,255,255,.1);border:1px solid rgba(255,69,0,.3);color:#fff;padding:.8rem 1rem;border-radius:10px}.form-control:focus,.form-select:focus{background:rgba(255,255,255,.15);border-color:var(--primary-color);color:#fff;box-shadow:0 0 0 .25rem rgba(255,69,0,.25)}.form-control::placeholder{color:rgba(255,255,255,.5)}input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}input[type=number]{-moz-appearance:textfield}.form-select option{background:var(--dark-color);color:#fff}.footer{background:#000;padding:60px 0 20px;border-top:3px solid var(--primary-color)}.footer-title{font-family:'Teko',Arial,sans-serif;font-size:1.8rem;color:var(--primary-color);margin-bottom:1.5rem}.footer-links{list-style:none;padding:0}.footer-links li{margin-bottom:.8rem;color:#aaa}.footer-links a{color:#aaa;text-decoration:none;transition:all .3s}.footer-links a:hover{color:var(--primary-color);padding-left:10px}.social-icons a{display:inline-block;width:45px;height:45px;background:rgba(255,69,0,.2);border-radius:50%;text-align:center;line-height:45px;margin-right:10px;color:#fff;transition:all .3s}.social-icons a:hover{background:var(--primary-color);transform:translateY(-5px)}.animate-on-scroll{opacity:0;transform:translateY(30px);transition:all .6s ease-out}.animate-on-scroll.animated{opacity:1;transform:translateY(0)}.float-btn{position:fixed;right:20px;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:28px;box-shadow:0 5px 20px rgba(0,0,0,.5);z-index:1000;transition:all .3s ease;text-decoration:none}.float-wa{bottom:90px;background:linear-gradient(135deg,#25D366,#20b358)}.float-wa:hover{transform:scale(1.15) rotate(5deg);box-shadow:0 8px 25px rgba(37,211,102,.6);color:#fff}.float-top{bottom:20px;background:linear-gradient(135deg,#FF4500,#ff6b35);opacity:0;visibility:hidden;font-size:22px}.float-top.show{opacity:1;visibility:visible}.float-top:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(255,69,0,.6);color:#fff}@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.7)}70%{box-shadow:0 0 0 15px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}.float-wa{animation:pulse 2s infinite}@media (max-width:768px){.section-title{font-size:2.5rem}.section-subtitle{font-size:1rem;margin-bottom:2.5rem}.cta-title{font-size:2rem}.contact-form{padding:1.5rem}.float-btn{width:50px;height:50px;font-size:24px;right:15px}.float-wa{bottom:75px}.float-top{font-size:18px}}
-    </style>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"></noscript>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
@@ -59,10 +84,7 @@
         {
           "@type": "SportsActivityLocation",
           "name": "AdrenaLine Paintball Arena",
-          "image": [
-            "https://adrenalinepaintball.id/assets/img/hero-image.webp",
-            "https://adrenalinepaintball.id/assets/img/areaurban.webp"
-          ],
+          "image": "https://adrenalinepaintball.id/assets/img/hero-image.webp",
           "description": "Arena paintball terbaik di Malang dengan konsep tactical urban dan forest.",
           "address": {
             "@type": "PostalAddress",
@@ -79,20 +101,6 @@
           },
           "url": "https://adrenalinepaintball.id",
           "telephone": "+62895639068080",
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-              "opens": "08:00",
-              "closes": "17:00"
-            },
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Saturday", "Sunday"],
-              "opens": "08:00",
-              "closes": "15:00"
-            }
-          ],
           "priceRange": "$$"
         },
         {
@@ -103,23 +111,15 @@
               "name": "Apakah paintball aman untuk pemula?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Ya, sangat aman! Kami menyediakan safety equipment lengkap termasuk masker pelindung wajah, body protector, dan gloves. Tim marshal profesional juga akan mendampingi."
+                "text": "Ya, sangat aman! Kami menyediakan safety equipment lengkap."
               }
             },
             {
               "@type": "Question",
-              "name": "Berapa usia minimal untuk bermain paintball di Malang?",
+              "name": "Berapa minimal peserta?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Usia minimal adalah 12 tahun. Peserta di bawah 18 tahun wajib didampingi wali."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Berapa harga paket paintball di AdrenaLine?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Kami menyediakan paket mulai dari Basic hingga VIP dengan harga terjangkau dan peralatan lengkap."
+                "text": "Minimal 10 orang untuk grup."
               }
             }
           ]
@@ -134,7 +134,7 @@
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top" aria-label="Main Navigation">
         <div class="container">
             <a class="navbar-brand" href="index.html" aria-label="AdrenaLine Paintball Home">
-                <img src="assets/img/Logo.webp" alt="AdrenaLine Paintball Malang Logo" width="150" height="45">
+                <img src="assets/img/Logo.webp" alt="AdrenaLine Paintball Malang Logo" width="150" height="45" fetchpriority="high">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
@@ -166,10 +166,10 @@
                     <p class="hero-subtitle">Arena Paintball Terbaik di Malang dengan Peralatan Premium & Lapangan
                         Tactical</p>
                     <div class="d-flex gap-3 mb-4">
-                        <button class="btn btn-primary-custom" onclick="scrollToSection('products')" aria-label="Lihat Paket Paintball">
+                        <button class="btn btn-primary-custom" onclick="scrollToSection('products')" aria-label="Lihat Paket">
                             <i class="fas fa-tag me-2"></i>Lihat Paket
                         </button>
-                        <button class="btn btn-primary-custom" onclick="openWhatsApp()" aria-label="Konsultasi via WhatsApp">
+                        <button class="btn btn-primary-custom" onclick="openWhatsApp()" aria-label="Konsultasi WhatsApp">
                             <i class="fab fa-whatsapp me-2"></i>Konsultasi
                         </button>
                     </div>
@@ -196,36 +196,26 @@
         <div class="container">
             <h2 class="section-title animate-on-scroll">Tentang Kami</h2>
             <p class="section-subtitle animate-on-scroll">Pengalaman Paintball Premium di Jantung Kota Malang</p>
-
             <div class="row g-4 mt-4">
                 <div class="col-md-4 animate-on-scroll">
                     <div class="about-card">
-                        <div class="about-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
+                        <div class="about-icon"><i class="fas fa-shield-alt"></i></div>
                         <h3 class="mb-3">Peralatan Premium</h3>
-                        <p>Menggunakan marker paintball berkualitas tinggi dari brand ternama dengan sistem CO2 dan
-                            perawatan rutin untuk performa maksimal.</p>
+                        <p>Menggunakan marker paintball berkualitas tinggi dari brand ternama dengan sistem CO2.</p>
                     </div>
                 </div>
                 <div class="col-md-4 animate-on-scroll" style="animation-delay: 0.2s;">
                     <div class="about-card">
-                        <div class="about-icon">
-                            <i class="fas fa-map-marked-alt"></i>
-                        </div>
+                        <div class="about-icon"><i class="fas fa-map-marked-alt"></i></div>
                         <h3 class="mb-3">Arena Tactical</h3>
-                        <p>3 arena dengan tema berbeda: Urban Warfare, Forest Combat, dan Speedball Arena. Dirancang
-                            untuk pengalaman bermain yang maksimal.</p>
+                        <p>3 arena dengan tema berbeda: Urban Warfare, Forest Combat, dan Speedball Arena.</p>
                     </div>
                 </div>
                 <div class="col-md-4 animate-on-scroll" style="animation-delay: 0.4s;">
                     <div class="about-card">
-                        <div class="about-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
+                        <div class="about-icon"><i class="fas fa-users"></i></div>
                         <h3 class="mb-3">Tim Profesional</h3>
-                        <p>Instruktur bersertifikat dan marshal berpengalaman siap memandu Anda untuk pengalaman
-                            paintball yang aman dan menyenangkan.</p>
+                        <p>Instruktur bersertifikat dan marshal berpengalaman siap memandu Anda.</p>
                     </div>
                 </div>
             </div>
@@ -235,44 +225,34 @@
     <section id="services" class="services-section">
         <div class="container">
             <h2 class="section-title animate-on-scroll">Layanan Kami</h2>
-            <p class="section-subtitle animate-on-scroll">Berbagai Pilihan Aktivitas Paintball untuk Setiap Kebutuhan
-            </p>
-
+            <p class="section-subtitle animate-on-scroll">Berbagai Pilihan Aktivitas Paintball</p>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3 animate-on-scroll">
                     <div class="service-card text-center">
-                        <div class="service-icon">
-                            <i class="fas fa-user-friends"></i>
-                        </div>
+                        <div class="service-icon"><i class="fas fa-user-friends"></i></div>
                         <h3 class="service-title">Permainan Grup</h3>
-                        <p>Perfect untuk rombongan teman atau keluarga. Minimal 10 orang dengan harga spesial grup.</p>
+                        <p>Perfect untuk rombongan teman atau keluarga. Minimal 10 orang.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 animate-on-scroll" style="animation-delay: 0.1s;">
                     <div class="service-card text-center">
-                        <div class="service-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
+                        <div class="service-icon"><i class="fas fa-building"></i></div>
                         <h3 class="service-title">Team Building</h3>
-                        <p>Paket khusus perusahaan dengan aktivitas team building dan leadership training.</p>
+                        <p>Paket khusus perusahaan dengan aktivitas team building.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 animate-on-scroll" style="animation-delay: 0.2s;">
                     <div class="service-card text-center">
-                        <div class="service-icon">
-                            <i class="fas fa-birthday-cake"></i>
-                        </div>
+                        <div class="service-icon"><i class="fas fa-birthday-cake"></i></div>
                         <h3 class="service-title">Event & Party</h3>
-                        <p>Rayakan ulang tahun atau acara spesial dengan pengalaman paintball yang tak terlupakan.</p>
+                        <p>Rayakan ulang tahun atau acara spesial dengan pengalaman tak terlupakan.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 animate-on-scroll" style="animation-delay: 0.3s;">
                     <div class="service-card text-center">
-                        <div class="service-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
+                        <div class="service-icon"><i class="fas fa-trophy"></i></div>
                         <h3 class="service-title">Tournament</h3>
-                        <p>Kompetisi paintball reguler dengan hadiah menarik. Daftar tim Anda sekarang!</p>
+                        <p>Kompetisi paintball reguler dengan hadiah menarik.</p>
                     </div>
                 </div>
             </div>
@@ -284,12 +264,10 @@
             <div class="row align-items-center cta-content text-center text-lg-start">
                 <div class="col-lg-8 mb-4 mb-lg-0">
                     <h2 class="cta-title">Siap Merasakan Sensasi Paintball?</h2>
-                    <p class="mb-0" style="font-size: 1.2rem;">Konsultasi gratis dengan tim kami untuk memilih paket
-                        yang sesuai kebutuhan Anda</p>
+                    <p class="mb-0" style="font-size: 1.2rem;">Konsultasi gratis dengan tim kami</p>
                 </div>
                 <div class="col-lg-4 text-lg-end">
-                    <button class="btn btn-outline-custom" style="border-color: #fff; color: #fff;"
-                        onclick="openWhatsApp()" aria-label="Chat WhatsApp Sekarang">
+                    <button class="btn btn-outline-custom" style="border-color: #fff; color: #fff;" onclick="openWhatsApp()" aria-label="Chat WhatsApp">
                         <i class="fab fa-whatsapp me-2"></i>Chat WhatsApp
                     </button>
                 </div>
@@ -300,14 +278,11 @@
     <section id="products" class="services-section">
         <div class="container">
             <h2 class="section-title animate-on-scroll">Paket & Harga</h2>
-            <p class="section-subtitle animate-on-scroll">Pilih Paket Terbaik untuk Pengalaman Paintball Anda</p>
-
+            <p class="section-subtitle animate-on-scroll">Pilih Paket Terbaik Anda</p>
             <div class="row g-4 align-items-stretch">
                 <div class="col-md-6 col-lg-4 animate-on-scroll">
                     <div class="product-card" onclick="orderPackage('Paket Basic')">
-                        <div class="text-center mb-3">
-                            <i class="fas fa-star" style="font-size: 3rem; color: var(--secondary-color);"></i>
-                        </div>
+                        <div class="text-center mb-3"><i class="fas fa-star" style="font-size: 3rem; color: var(--secondary-color);"></i></div>
                         <h3 class="service-title text-center">PAKET BASIC</h3>
                         <ul class="list-unstyled mb-4">
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i>100 Paintballs</li>
@@ -316,18 +291,12 @@
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i>1 Arena Access</li>
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i>2 Jam Bermain</li>
                         </ul>
-                        <button class="btn btn-primary-custom w-100"
-                            onclick="event.stopPropagation(); orderPackage('Paket Basic')" aria-label="Pesan Paket Basic">
-                            <i class="fab fa-whatsapp me-2"></i>Pesan Sekarang
-                        </button>
+                        <button class="btn btn-primary-custom w-100" onclick="event.stopPropagation(); orderPackage('Paket Basic')" aria-label="Pesan Basic">Pesan Sekarang</button>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 animate-on-scroll" style="animation-delay: 0.1s;">
-                    <div class="product-card" onclick="orderPackage('Paket Premium')"
-                        style="border-color: var(--primary-color);">
-                        <div class="text-center mb-3">
-                            <i class="fas fa-crown" style="font-size: 3rem; color: var(--primary-color);"></i>
-                        </div>
+                    <div class="product-card" onclick="orderPackage('Paket Premium')" style="border-color: var(--primary-color);">
+                        <div class="text-center mb-3"><i class="fas fa-crown" style="font-size: 3rem; color: var(--primary-color);"></i></div>
                         <div class="text-center mb-2"><span class="badge bg-danger">TERPOPULER</span></div>
                         <h3 class="service-title text-center">PAKET PREMIUM</h3>
                         <ul class="list-unstyled mb-4">
@@ -338,17 +307,12 @@
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i>4 Jam Bermain</li>
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Free Drink</li>
                         </ul>
-                        <button class="btn btn-primary-custom w-100"
-                            onclick="event.stopPropagation(); orderPackage('Paket Premium')" aria-label="Pesan Paket Premium">
-                            <i class="fab fa-whatsapp me-2"></i>Pesan Sekarang
-                        </button>
+                        <button class="btn btn-primary-custom w-100" onclick="event.stopPropagation(); orderPackage('Paket Premium')" aria-label="Pesan Premium">Pesan Sekarang</button>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 animate-on-scroll" style="animation-delay: 0.2s;">
                     <div class="product-card" onclick="orderPackage('Paket VIP')">
-                        <div class="text-center mb-3">
-                            <i class="fas fa-gem" style="font-size: 3rem; color: var(--accent-blue);"></i>
-                        </div>
+                        <div class="text-center mb-3"><i class="fas fa-gem" style="font-size: 3rem; color: var(--accent-blue);"></i></div>
                         <h3 class="service-title text-center">PAKET VIP</h3>
                         <ul class="list-unstyled mb-4">
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Unlimited Paintballs</li>
@@ -359,10 +323,7 @@
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Meal & Drink</li>
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Photo Session</li>
                         </ul>
-                        <button class="btn btn-primary-custom w-100"
-                            onclick="event.stopPropagation(); orderPackage('Paket VIP')" aria-label="Pesan Paket VIP">
-                            <i class="fab fa-whatsapp me-2"></i>Pesan Sekarang
-                        </button>
+                        <button class="btn btn-primary-custom w-100" onclick="event.stopPropagation(); orderPackage('Paket VIP')" aria-label="Pesan VIP">Pesan Sekarang</button>
                     </div>
                 </div>
             </div>
@@ -373,46 +334,35 @@
         <div class="container">
             <h2 class="section-title animate-on-scroll">Galeri</h2>
             <p class="section-subtitle animate-on-scroll">Lihat Aksi Seru di Arena Paintball Kami</p>
-
             <div class="row g-3">
                 <div class="col-md-4 animate-on-scroll">
                     <div class="gallery-item">
-                        <img src="assets/img/areaurban.webp" alt="Urban Warfare Arena Paintball Malang" width="400" height="300" loading="lazy" decoding="async">
-                        <div class="gallery-overlay">
-                            <h4>Urban Warfare Arena</h4>
-                        </div>
+                        <img src="assets/img/areaurban.webp" alt="Urban Warfare Arena" width="400" height="300" loading="lazy" decoding="async">
+                        <div class="gallery-overlay"><h4>Urban Warfare Arena</h4></div>
                     </div>
                 </div>
                 <div class="col-md-4 animate-on-scroll" style="animation-delay: 0.1s;">
                     <div class="gallery-item">
-                        <img src="assets/img/areaforest.webp" alt="Forest Combat Zone Paintball Malang" width="400" height="300" loading="lazy" decoding="async">
-                        <div class="gallery-overlay">
-                            <h4>Forest Combat Zone</h4>
-                        </div>
+                        <img src="assets/img/areaforest.webp" alt="Forest Combat Zone" width="400" height="300" loading="lazy" decoding="async">
+                        <div class="gallery-overlay"><h4>Forest Combat Zone</h4></div>
                     </div>
                 </div>
                 <div class="col-md-4 animate-on-scroll" style="animation-delay: 0.2s;">
                     <div class="gallery-item">
-                        <img src="assets/img/areaspeedball.webp" alt="Speedball Arena Paintball Malang" width="400" height="300" loading="lazy" decoding="async">
-                        <div class="gallery-overlay">
-                            <h4>Speedball Arena</h4>
-                        </div>
+                        <img src="assets/img/areaspeedball.webp" alt="Speedball Arena" width="400" height="300" loading="lazy" decoding="async">
+                        <div class="gallery-overlay"><h4>Speedball Arena</h4></div>
                     </div>
                 </div>
                 <div class="col-md-6 animate-on-scroll" style="animation-delay: 0.3s;">
                     <div class="gallery-item">
-                        <img src="assets/img/TimBattle.webp" alt="Team Battle Action Paintball" width="600" height="300" loading="lazy" decoding="async">
-                        <div class="gallery-overlay">
-                            <h4>Team Battle Action</h4>
-                        </div>
+                        <img src="assets/img/TimBattle.webp" alt="Team Battle Action" width="600" height="300" loading="lazy" decoding="async">
+                        <div class="gallery-overlay"><h4>Team Battle Action</h4></div>
                     </div>
                 </div>
                 <div class="col-md-6 animate-on-scroll" style="animation-delay: 0.4s;">
                     <div class="gallery-item">
-                        <img src="assets/img/blog1.webp" alt="Tournament Events Paintball" width="600" height="300" loading="lazy" decoding="async">
-                        <div class="gallery-overlay">
-                            <h4>Tournament Events</h4>
-                        </div>
+                        <img src="assets/img/blog1.webp" alt="Tournament Events" width="600" height="300" loading="lazy" decoding="async">
+                        <div class="gallery-overlay"><h4>Tournament Events</h4></div>
                     </div>
                 </div>
             </div>
@@ -423,67 +373,39 @@
         <div class="container">
             <h2 class="section-title animate-on-scroll">Testimoni</h2>
             <p class="section-subtitle animate-on-scroll">Apa Kata Mereka yang Sudah Bermain</p>
-
             <div class="row g-4">
                 <div class="col-md-4 animate-on-scroll">
                     <div class="testimonial-card">
-                        <div class="testimonial-text">
-                            "Pengalaman paintball terbaik yang pernah saya rasakan! Arena-nya keren, peralatannya
-                            lengkap, dan tim instrukturnya sangat profesional. Pasti balik lagi!"
-                        </div>
+                        <div class="testimonial-text">"Pengalaman paintball terbaik! Arena keren, peralatan lengkap."</div>
                         <div class="testimonial-author">
                             <div class="testimonial-avatar">AR</div>
                             <div>
                                 <div class="fw-bold">Ahmad Rizki</div>
-                                <div class="text-warning">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
+                                <div class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 animate-on-scroll" style="animation-delay: 0.1s;">
                     <div class="testimonial-card">
-                        <div class="testimonial-text">
-                            "Sempurna untuk team building kantor! Semua karyawan senang dan bisa lebih kompak setelah
-                            bermain paintball di sini. Recommended banget!"
-                        </div>
+                        <div class="testimonial-text">"Sempurna untuk team building kantor! Karyawan jadi kompak."</div>
                         <div class="testimonial-author">
                             <div class="testimonial-avatar">DS</div>
                             <div>
                                 <div class="fw-bold">Dina Safitri</div>
-                                <div class="text-warning">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
+                                <div class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 animate-on-scroll" style="animation-delay: 0.2s;">
                     <div class="testimonial-card">
-                        <div class="testimonial-text">
-                            "Fasilitasnya modern, safety-nya terjaga dengan baik, dan harganya worth it banget! Buat
-                            yang cari tempat paintball di Malang, ini pilihan terbaik!"
-                        </div>
+                        <div class="testimonial-text">"Fasilitas modern, safety terjaga, harga worth it!"</div>
                         <div class="testimonial-author">
                             <div class="testimonial-avatar">BP</div>
                             <div>
                                 <div class="fw-bold">Budi Pratama</div>
-                                <div class="text-warning">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
+                                <div class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                             </div>
                         </div>
                     </div>
@@ -496,81 +418,45 @@
         <div class="container">
             <h2 class="section-title animate-on-scroll">FAQ</h2>
             <p class="section-subtitle animate-on-scroll">Pertanyaan yang Sering Diajukan</p>
-
             <div class="accordion" id="faqAccordion">
                 <div class="accordion-item animate-on-scroll">
                     <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                            Apakah paintball aman untuk pemula?
-                        </button>
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">Apakah paintball aman untuk pemula?</button>
                     </h2>
                     <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Ya, sangat aman! Kami menyediakan safety equipment lengkap termasuk masker pelindung wajah,
-                            body protector, dan gloves. Tim marshal kami juga akan memberikan briefing keselamatan
-                            sebelum permainan dimulai.
-                        </div>
+                        <div style="color: #000;" class="accordion-body">Ya, sangat aman! Kami menyediakan safety equipment lengkap.</div>
                     </div>
                 </div>
-
                 <div class="accordion-item animate-on-scroll" style="animation-delay: 0.1s;">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#faq2">
-                            Berapa minimal peserta untuk booking?
-                        </button>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Berapa minimal peserta untuk booking?</button>
                     </h2>
                     <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Untuk booking reguler, minimal 10 orang. Namun, jika jumlah peserta kurang dari 10 orang,
-                            Anda tetap bisa bermain dengan menunggu pemain lain atau booking private session dengan
-                            biaya tambahan.
-                        </div>
+                        <div style="color: #000;" class="accordion-body">Untuk booking reguler, minimal 10 orang.</div>
                     </div>
                 </div>
-
                 <div class="accordion-item animate-on-scroll" style="animation-delay: 0.2s;">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#faq3">
-                            Apakah harus booking terlebih dahulu?
-                        </button>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Apakah harus booking terlebih dahulu?</button>
                     </h2>
                     <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Sangat disarankan untuk booking terlebih dahulu melalui WhatsApp kami untuk memastikan
-                            ketersediaan arena dan peralatan. Namun, walk-in juga diterima jika masih ada slot tersedia.
-                        </div>
+                        <div style="color: #000;" class="accordion-body">Sangat disarankan untuk booking terlebih dahulu via WhatsApp.</div>
                     </div>
                 </div>
-
                 <div class="accordion-item animate-on-scroll" style="animation-delay: 0.3s;">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#faq4">
-                            Apa yang harus dibawa saat bermain paintball?
-                        </button>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">Apa yang harus dibawa?</button>
                     </h2>
                     <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Cukup bawa pakaian yang nyaman untuk bergerak (disarankan lengan panjang dan celana
-                            panjang), sepatu olahraga, dan semangat! Semua peralatan paintball sudah kami sediakan.
-                        </div>
+                        <div style="color: #000;" class="accordion-body">Pakaian nyaman (lengan panjang disarankan) dan sepatu olahraga.</div>
                     </div>
                 </div>
-
                 <div class="accordion-item animate-on-scroll" style="animation-delay: 0.4s;">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#faq5">
-                            Berapa usia minimal untuk bermain paintball?
-                        </button>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">Berapa usia minimal?</button>
                     </h2>
                     <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Usia minimal adalah 12 tahun. Untuk peserta di bawah 18 tahun, wajib didampingi orang tua
-                            atau wali dan mengisi formulir persetujuan.
-                        </div>
+                        <div style="color: #000;" class="accordion-body">Minimal 12 tahun. Di bawah 18 tahun perlu pendamping/izin.</div>
                     </div>
                 </div>
             </div>
@@ -580,10 +466,8 @@
     <section class="cta-section">
         <div class="container text-center cta-content">
             <h2 class="cta-title mb-4">Tunggu Apa Lagi? Booking Sekarang!</h2>
-            <p style="font-size: 1.3rem; margin-bottom: 2rem;">Dapatkan pengalaman paintball terbaik bersama teman dan
-                keluarga</p>
-            <button class="btn btn-outline-light btn-lg fw-bold" onclick="scrollToSection('products')"
-                style="border-width: 2px; border-radius: 50px; padding: 1rem 2.5rem;" aria-label="Lihat Semua Paket">
+            <p style="font-size: 1.3rem; margin-bottom: 2rem;">Dapatkan pengalaman paintball terbaik.</p>
+            <button class="btn btn-outline-light btn-lg fw-bold" onclick="scrollToSection('products')" style="border-width: 2px; border-radius: 50px; padding: 1rem 2.5rem;" aria-label="Lihat Semua Paket">
                 <i class="fas fa-tags me-2"></i>Lihat Semua Paket
             </button>
         </div>
@@ -592,52 +476,43 @@
     <section id="news" class="news-section">
         <div class="container">
             <h2 class="section-title animate-on-scroll">Berita Terbaru</h2>
-            <p class="section-subtitle animate-on-scroll">Update & Promo Terkini dari Kami</p>
-
+            <p class="section-subtitle animate-on-scroll">Update & Promo Terkini</p>
             <div class="row g-4">
                 <div class="col-md-4 animate-on-scroll">
                     <div class="news-card">
                         <img src="assets/img/blog1.webp" alt="Promo Paintball Malang 2026" class="img-fluid" width="400" height="200" loading="lazy" decoding="async">
                         <div class="news-content">
                             <div class="news-date">15 Januari 2026</div>
-                            <h3 class="news-title">Promo Tahun Baru: Diskon 25% untuk Paket Premium!</h3>
-                            <p>Rayakan tahun baru dengan main paintball! Dapatkan diskon spesial 25% untuk semua paket
-                                premium hingga akhir Januari.</p>
-                            <a href="blog1.html" class="text-decoration-none" aria-label="Baca selengkapnya tentang Promo">
-                                <span style="color: var(--primary-color);">Selengkapnya <i
-                                        class="fas fa-arrow-right"></i></span>
+                            <h3 class="news-title">Promo Tahun Baru: Diskon 25%</h3>
+                            <p>Rayakan tahun baru dengan main paintball! Diskon spesial 25% untuk paket premium.</p>
+                            <a href="blog1.html" class="text-decoration-none" aria-label="Baca Selengkapnya">
+                                <span style="color: var(--primary-color);">Selengkapnya <i class="fas fa-arrow-right"></i></span>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 animate-on-scroll" style="animation-delay: 0.1s;">
                     <div class="news-card">
-                        <img src="assets/img/TimBattle.webp" alt="Tournament Paintball Malang"
-                            class="img-fluid" width="400" height="200" loading="lazy" decoding="async">
+                        <img src="assets/img/TimBattle.webp" alt="Tournament Paintball Malang" class="img-fluid" width="400" height="200" loading="lazy" decoding="async">
                         <div class="news-content">
                             <div class="news-date">10 Januari 2026</div>
-                            <h3 class="news-title">Tournament Bulanan Januari: Total Hadiah 10 Juta!</h3>
-                            <p>Daftarkan tim Anda untuk tournament paintball bulanan kami. Kompetisi seru dengan total
-                                hadiah mencapai 10 juta rupiah.</p>
-                            <a href="blog2.html" class="text-decoration-none" aria-label="Baca selengkapnya tentang Tournament">
-                                <span style="color: var(--primary-color);">Selengkapnya <i
-                                        class="fas fa-arrow-right"></i></span>
+                            <h3 class="news-title">Tournament Bulanan Januari</h3>
+                            <p>Kompetisi seru dengan total hadiah mencapai 10 juta rupiah. Daftar sekarang!</p>
+                            <a href="blog2.html" class="text-decoration-none" aria-label="Baca Selengkapnya">
+                                <span style="color: var(--primary-color);">Selengkapnya <i class="fas fa-arrow-right"></i></span>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 animate-on-scroll" style="animation-delay: 0.2s;">
                     <div class="news-card">
-                        <img src="assets/img/areaforest.webp" alt="New Cyber Arena Paintball"
-                            class="img-fluid" width="400" height="200" loading="lazy" decoding="async">
+                        <img src="assets/img/areaforest.webp" alt="New Cyber Arena" class="img-fluid" width="400" height="200" loading="lazy" decoding="async">
                         <div class="news-content">
                             <div class="news-date">5 Januari 2026</div>
-                            <h3 class="news-title">Arena Baru: Cyber Warfare Zone Sudah Dibuka!</h3>
-                            <p>Kami dengan bangga memperkenalkan arena terbaru kami: Cyber Warfare Zone! Arena
-                                futuristik dengan teknologi pencahayaan LED.</p>
-                            <a href="blog3.html" class="text-decoration-none" aria-label="Baca selengkapnya tentang Arena Baru">
-                                <span style="color: var(--primary-color);">Selengkapnya <i
-                                        class="fas fa-arrow-right"></i></span>
+                            <h3 class="news-title">Arena Baru: Cyber Warfare!</h3>
+                            <p>Arena futuristik dengan teknologi pencahayaan LED. Rasakan sensasi baru.</p>
+                            <a href="blog3.html" class="text-decoration-none" aria-label="Baca Selengkapnya">
+                                <span style="color: var(--primary-color);">Selengkapnya <i class="fas fa-arrow-right"></i></span>
                             </a>
                         </div>
                     </div>
@@ -649,61 +524,42 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <h2 class="section-title animate-on-scroll">Hubungi Kami</h2>
-            <p class="section-subtitle animate-on-scroll">Isi formulir di bawah ini dan tim kami akan segera menghubungi
-                Anda</p>
-
+            <p class="section-subtitle animate-on-scroll">Isi formulir dan kami akan segera menghubungi Anda</p>
             <div class="row g-4">
                 <div class="col-lg-4">
                     <div class="contact-info-card animate-on-scroll">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <h4 class="mb-2">Lokasi Showroom</h4>
                         <p class="mb-0">Jl. Soekarno Hatta No. 88<br>Lowokwaru, Malang<br>Jawa Timur 65141</p>
                     </div>
-
                     <div class="contact-info-card animate-on-scroll" style="animation-delay: 0.1s;">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
                         <h4 class="mb-2">Layanan Pelanggan</h4>
-                        <p class="mb-2">WhatsApp: <a href="https://wa.me/6282211221909" class="text-decoration-none"
-                                style="color: var(--secondary-color);">0895-6390-68080</a></p>
+                        <p class="mb-2">WhatsApp: <a href="https://wa.me/6282211221909" class="text-decoration-none" style="color: var(--secondary-color);">0895-6390-68080</a></p>
                         <p class="mb-0">Senin - Jumat: 08.00 - 17.00 WIB<br>Sabtu - Minggu: 08.00 - 15.00 WIB</p>
                     </div>
-
                     <div class="contact-info-card animate-on-scroll" style="animation-delay: 0.2s;">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                         <h4 class="mb-2">Email Resmi</h4>
-                        <p class="mb-0">
-                            <a href="mailto:info@adrenalinepaintball.id" class="text-decoration-none"
-                                style="color: var(--secondary-color);">info@adrenalinepaintball.id</a><br>
-                        </p>
+                        <p class="mb-0"><a href="mailto:info@adrenalinepaintball.id" class="text-decoration-none" style="color: var(--secondary-color);">info@adrenalinepaintball.id</a></p>
                     </div>
                 </div>
-
                 <div class="col-lg-8">
                     <div class="contact-form animate-on-scroll" style="animation-delay: 0.3s;">
                         <h3 class="mb-4" style="font-family: 'Teko', Arial, sans-serif; font-size: 2rem;">KIRIM PESAN</h3>
-                        <p class="mb-4">Isi formulir di bawah ini, tim kami akan segera menghubungi Anda via WhatsApp.
-                        </p>
-
+                        <p class="mb-4">Isi formulir, kami balas via WhatsApp.</p>
                         <form id="contactForm">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label class="form-label">Nama Lengkap</label>
-                                    <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda"
-                                        required>
+                                    <input type="text" class="form-control" id="nama" placeholder="Nama Anda" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label">Nomor WhatsApp</label>
-                                    <input type="number" class="form-control" id="whatsapp"
-                                        placeholder="Contoh: 08123456789" required pattern="[0-9]*" inputmode="numeric">
+                                    <input type="number" class="form-control" id="whatsapp" placeholder="08123456789" required pattern="[0-9]*" inputmode="numeric">
                                 </div>
                                 <div class="col-12">
-                                    <label class="form-label">Topik Pertanyaan</label>
+                                    <label class="form-label">Topik</label>
                                     <select class="form-select" id="topik" required>
                                         <option value="" selected>Pilih Kategori...</option>
                                         <option value="Informasi Paket">Informasi Paket</option>
@@ -714,14 +570,12 @@
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <label class="form-label">Isi Pesan</label>
-                                    <textarea class="form-control" id="pesan" rows="5"
-                                        placeholder="Tuliskan detail pertanyaan atau kebutuhan Anda disini..."
-                                        required></textarea>
+                                    <label class="form-label">Pesan</label>
+                                    <textarea class="form-control" id="pesan" rows="5" placeholder="Tulis pesan..." required></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-primary-custom w-100 btn-lg" aria-label="Kirim Pesan Sekarang">
-                                        <i class="fab fa-whatsapp me-2"></i>KIRIM PESAN SEKARANG
+                                    <button type="submit" class="btn btn-primary-custom w-100 btn-lg" aria-label="Kirim Pesan">
+                                        <i class="fab fa-whatsapp me-2"></i>KIRIM PESAN
                                     </button>
                                 </div>
                             </div>
@@ -744,13 +598,12 @@
             <div class="row g-4">
                 <div class="col-lg-4">
                     <h3 class="footer-title">ADRENALINE PAINTBALL</h3>
-                    <p style="color: #aaa;">Arena paintball terbaik di Malang dengan fasilitas premium dan pengalaman
-                        bermain yang tak terlupakan.</p>
+                    <p style="color: #aaa;">Arena paintball terbaik di Malang dengan fasilitas premium.</p>
                     <div class="social-icons mt-4">
-                        <a href="#" aria-label="Kunjungi Facebook Kami"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Kunjungi Instagram Kami"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Kunjungi Twitter Kami"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Kunjungi Youtube Kami"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
@@ -790,114 +643,90 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 
     <script>
-        // Back to Top Button Logic
-        const backToTopBtn = document.getElementById('backToTop');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                backToTopBtn.classList.add('show');
-            } else {
-                backToTopBtn.classList.remove('show');
+        document.addEventListener('DOMContentLoaded', function() {
+            // Logic Back to Top
+            const backToTopBtn = document.getElementById('backToTop');
+            if(backToTopBtn){
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 300) {
+                        backToTopBtn.classList.add('show');
+                        backToTopBtn.style.visibility = 'visible';
+                        backToTopBtn.style.opacity = '1';
+                    } else {
+                        backToTopBtn.classList.remove('show');
+                        backToTopBtn.style.visibility = 'hidden';
+                        backToTopBtn.style.opacity = '0';
+                    }
+                });
+                backToTopBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
             }
-        });
-        backToTopBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-        // Navbar scroll effect
-        window.addEventListener('scroll', function () {
+
+            // Navbar Scroll Logic
             const navbar = document.querySelector('.navbar-custom');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
+            if(navbar){
+                window.addEventListener('scroll', function () {
+                    if (window.scrollY > 50) {
+                        navbar.classList.add('scrolled');
+                    } else {
+                        navbar.classList.remove('scrolled');
+                    }
+                });
+            }
+
+            // Intersection Observer
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animated');
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.animate-on-scroll').forEach(element => {
+                observer.observe(element);
+            });
+
+            // Form Logic
+            const form = document.getElementById('contactForm');
+            if(form){
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    const nama = document.getElementById('nama').value;
+                    const whatsapp = document.getElementById('whatsapp').value;
+                    const topik = document.getElementById('topik').value;
+                    const pesan = document.getElementById('pesan').value;
+                    const message = `*PESAN DARI WEBSITE*\n\n*Nama:* ${nama}\n*WhatsApp:* ${whatsapp}\n*Topik:* ${topik}\n*Pesan:*\n${pesan}`;
+                    window.open(`https://wa.me/6282211221909?text=${encodeURIComponent(message)}`, '_blank');
+                    this.reset();
+                });
             }
         });
 
-        // Scroll animation
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver(function (entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animated');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.animate-on-scroll').forEach(element => {
-            observer.observe(element);
-        });
-
-        // Smooth scroll
         function scrollToSection(sectionId) {
             const element = document.getElementById(sectionId);
             if (element) {
                 const offset = 80;
                 const elementPosition = element.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
+                window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
             }
         }
 
-        // WhatsApp functions
         function openWhatsApp() {
-            const phoneNumber = '6282211221909';
-            const message = encodeURIComponent('Halo! Saya tertarik dengan layanan paintball AdrenaLine. Mohon informasi lebih lanjut.');
-            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+            window.open(`https://wa.me/6282211221909?text=${encodeURIComponent('Halo! Saya tertarik dengan layanan paintball AdrenaLine.')}`, '_blank');
         }
 
         function orderPackage(packageName) {
-            const phoneNumber = '6282211221909';
-            const message = encodeURIComponent(`Halo! Saya ingin memesan ${packageName}. Mohon informasi lebih lanjut mengenai ketersediaan dan cara bookingnya.`);
-            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+            window.open(`https://wa.me/6282211221909?text=${encodeURIComponent('Halo! Saya ingin memesan ' + packageName)}`, '_blank');
         }
-
-        // Contact form submission
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            const nama = document.getElementById('nama').value;
-            const whatsapp = document.getElementById('whatsapp').value;
-            const topik = document.getElementById('topik').value;
-            const pesan = document.getElementById('pesan').value;
-
-            const message = `*PESAN DARI WEBSITE PAINTBALL*
-            
-*Nama:* ${nama}
-*WhatsApp:* ${whatsapp}
-*Topik:* ${topik}
-*Pesan:*
-${pesan}
-
-_Mohon segera ditindaklanjuti. Terima kasih!_`;
-
-            const phoneNumber = '6282211221909';
-            const encodedMessage = encodeURIComponent(message);
-
-            window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
-
-            // Reset form
-            this.reset();
-        });
-
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function () {
-                const navbarCollapse = document.querySelector('.navbar-collapse');
-                if (navbarCollapse.classList.contains('show')) {
-                    const bsCollapse = new bootstrap.Collapse(navbarCollapse);
-                    bsCollapse.hide();
-                }
-            });
-        });
     </script>
 </body>
-
 </html>
